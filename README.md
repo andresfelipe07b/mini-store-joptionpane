@@ -47,7 +47,7 @@ This user story provides value by combining **basic data structures** with **sim
 ```
 src/main/java/org/example/
 │
-├── MiniStoreApp.java   // Main class with menu loop
+├── MiniStore.java   // Main class with menu loop
 ├── Inventory.java      // Business logic: add, list, buy, stats, search, exit
 ├── Product.java        // Data model (encapsulation of name, price, stock)
 └── Utils.java          // Helper methods for validations and formatting
@@ -56,7 +56,7 @@ src/main/java/org/example/
 ---
 
 ## 🧩 Best Practices Applied
-- **Modularization** → separated into multiple classes (`Product`, `Inventory`, `Utils`, `MiniStoreApp`) to respect **Single Responsibility Principle**.  
+- **Modularization** → separated into multiple classes (`Product`, `Inventory`, `Utils`, `MiniStore`) to respect **Single Responsibility Principle**.  
 - **Encapsulation** → private attributes in `Product` with getters and setters.  
 - **Validation** → prevents empty inputs, invalid numbers, negative stock, and duplicate products.  
 - **User feedback** → clear messages with `showMessageDialog` for errors, confirmations, and results.  
